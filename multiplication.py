@@ -1,0 +1,11 @@
+from tkinter import*
+window=Tk()
+button1=Button(window, text="Open")
+button1.place(x=120, y=60)
+button2=Button(window, text="Delete")
+button2.place(x=250, y=60)
+button3=Button(window, text="Save")
+button3.place(x=400, y=60)
+button4=Button(window, text="Add")
+button4.place(x=400, y=180)
+window.mainloop()
