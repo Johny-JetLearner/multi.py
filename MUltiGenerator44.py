@@ -1,0 +1,25 @@
+from tkinter import*
+from tkinter.ttk import*
+window=Tk()
+label=Label(window,text="Multiplication Table")
+label.grid(row=0,column=0)
+label2=Label(window,text="number or multiple")
+label2.grid(row=1,column=1)
+numint=IntVar()
+combobox=Combobox(window,textvariable=numint)
+combobox.grid(row=2,column=2)
+combobox["values"]=tuple(range(0,101))
+radioint=IntVar()
+radiobutton=Radiobutton(window,text="10",variable=radioint,value=10)
+radiobutton.grid(row=3,column=2)
+radiobutton2=Radiobutton(window,text="100",variable=radioint,value=100)
+radiobutton2.grid(row=4,column=2)
+radiobutton2=Radiobutton(window,text="1000",variable=radioint,value=1000)
+radiobutton2.grid(row=5,column=2)
+Generator=Button(window,text="Generator")
+Generator.grid(row=6, column=3)
+def MultiGenerator():
+    M=""
+    N=numint.get()
+    Multi=radioint.get()
+window.mainloop()
